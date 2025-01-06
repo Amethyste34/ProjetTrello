@@ -1,6 +1,5 @@
-import {StyleSheet, View, Text, SafeAreaView} from 'react-native';
+import {StyleSheet, View, SafeAreaView} from 'react-native';
 import {StatusBar} from "expo-status-bar";
-import TaskListItem from "@/src/components/TaskListItem";
 import TaskList from "@/src/components/TaskList";
 
 export default function HomeScreen() {
