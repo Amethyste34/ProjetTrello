@@ -1,19 +1,12 @@
-import {StyleSheet, View } from 'react-native';
-import {StatusBar} from "expo-status-bar";
 import TaskBoard from "@/src/components/TaskBoard";
+import { Stack } from "expo-router";
+import React from "react";
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-        <StatusBar style='light' />
+      <>
+        <Stack.Screen options={{ title: "Project Board"}} />
         <TaskBoard/>
-    </View>
+      </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-});
