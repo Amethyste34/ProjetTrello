@@ -46,13 +46,15 @@ const styles = StyleSheet.create({
         backgroundColor: '#133266',
         padding: 15,
         borderRadius: 10,
-        gap: 15
+        gap: 15,
+        marginTop: 20,
     },
     title: {
         color: 'white',
         fontWeight: 'bold',
         fontSize: 20,
-        marginVertical: 10
+        marginVertical: 10,
+        textAlign: 'center',
     },
     input: {
         color: 'white',

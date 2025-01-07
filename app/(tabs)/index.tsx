@@ -1,16 +1,13 @@
-import {StyleSheet, View, SafeAreaView} from 'react-native';
+import {StyleSheet, View } from 'react-native';
 import {StatusBar} from "expo-status-bar";
-import TaskList from "@/src/components/TaskList";
+import TaskBoard from "@/src/components/TaskBoard";
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={{ padding: 10 }}>
-        <TaskList/>
-      </View>
-
-      <StatusBar style="auto"/>
-    </SafeAreaView>
+    <View style={styles.container}>
+        <StatusBar style='light' />
+        <TaskBoard/>
+    </View>
   );
 }
 
@@ -18,6 +15,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-      marginTop: 15,
   },
 });
